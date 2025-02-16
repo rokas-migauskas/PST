@@ -120,7 +120,7 @@ public class DigitalDownloadsTestBase : IDisposable
 
         IWebElement checkoutButton = driver.FindElement(By.XPath("//button[@id='checkout']"));
         checkoutButton.Click();
-        Thread.Sleep(10000); // Wait for the billing section to load
+        Thread.Sleep(2000); // Wait for the billing section to load
 
         wait.Until(ExpectedConditions.ElementIsVisible(By.Id("co-billing-form")));
 
